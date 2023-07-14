@@ -15,5 +15,15 @@ function reverse(str) {
     return arr1.join("")
 
 }
+// using for ...of
+function reverseString(str){
+    let reversed = '';
+    for (let character of str){
+        reversed = character + reversed;
+    }
+    return reversed;
+
+}
+
 
 module.exports = reverse;
