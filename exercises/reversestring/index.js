@@ -24,6 +24,9 @@ function reverseString(str){
     return reversed;
 
 }
-
+// using reduce()
+function reversedString(str){
+    return str.split("").reduce((reverse, character)=> character + reverse, "")
+}
 
 module.exports = reverse;
